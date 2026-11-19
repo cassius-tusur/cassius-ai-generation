@@ -233,6 +233,8 @@ public class SimpleDtoProviderTests
 
     private sealed class MockElement : IElement
     {
+        public Guid Id { get; } = Guid.NewGuid();
+
         public MockElement(ElemType type, string name, string description)
         {
             Type = type;

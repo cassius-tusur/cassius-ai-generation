@@ -161,6 +161,8 @@ public class SerializerDtoProviderTests
 
     private sealed class MockElement : IElement
     {
+        public Guid Id { get; } = Guid.NewGuid();
+
         public MockElement()
         {
             Type = ElemType.Event;
