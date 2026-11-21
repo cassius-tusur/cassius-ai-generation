@@ -123,6 +123,7 @@ namespace AiGenerator.Tests
                     entry => Assert.Equal((PromptEntry.Schema, "schema"), entry),
                     entry => Assert.Equal((PromptEntry.Context, "System prompt"), entry),
                     entry => Assert.Equal((PromptEntry.Context, "Plot: plot-dto"), entry),
+                    entry => Assert.Equal((PromptEntry.Context, "Character type"), entry),
                     entry => Assert.Equal((PromptEntry.Request, "Element: element-dto"), entry));
             }
             finally
@@ -262,6 +263,8 @@ namespace AiGenerator.Tests
             {
                 ["Setting"] = "System prompt",
                 ["Plot"] = "Plot: {0}",
+                ["TypeCharacter"] = "Character type",
+                ["TypeItem"] = "Item type",
                 ["Element"] = "Element: {0}"
             };
             var path = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid()}.json");
