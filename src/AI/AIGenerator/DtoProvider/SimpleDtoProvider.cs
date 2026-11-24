@@ -194,7 +194,7 @@ namespace AIGenerator.DtoProvider
                     .ToDictionary(p => p.Key.Name,
                         p => JsonSerializer.SerializeToElement(p.Value, Options));
                 if (plot != null)
-                    Relations = plot.Relations.Where(r => Equals(r.Source, element))
+                    Relations = plot.Relations.Where(r => r.Source.Id == element.Id)
                         .Select(r => new SimpleRelationDto
                         {
                             Target = r.Target.Name,
