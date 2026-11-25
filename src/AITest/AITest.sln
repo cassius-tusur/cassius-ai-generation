@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AITest", "AITest.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIGenerator", "..\AIGenerator\AIGenerator.csproj", "{72D00323-D1FE-4864-8C03-73F0477904CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClasses", "..\..\..\external\BaseClasses\src\base\BaseClasses\BaseClasses.csproj", "{046A8B88-53D2-4FC3-8D94-E28BCABCE0DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClasses", "..\..\external\BaseClasses\src\BaseClasses\BaseClasses.csproj", "{046A8B88-53D2-4FC3-8D94-E28BCABCE0DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
